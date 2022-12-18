@@ -16,7 +16,7 @@ function Register()
       const handleMobile= (event) => {
         setMobile(event.target.value)
       }
-      
+
       const handleEmail= (event) => {
         setEmail(event.target.value)
       }
@@ -25,7 +25,7 @@ function Register()
         setPassword(event.target.value)
       }
       const handleApi =()=>{
-        console.log({Name,mobile,email,password})
+        // console.log({Name,mobile,email,password})
         axios.post('https://reqres.in/api/login', {
             Name : Name,
             mobile : mobile,
